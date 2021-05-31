@@ -10,7 +10,7 @@
 docker-compose up
 ```
 
-- To access a containers terminal (must be running):
+- To bash into a container:
 
 ```jsx
 docker exec -it <container-name> bash
@@ -20,6 +20,11 @@ docker exec -it <container-name> bash
 
 ```jsx
 command: tail -f/dev/null
+```
+
+- Keep a container going, bash into the container and run make to see the logs of spinning it up. make is the command for docker to run:
+```jsx
+make
 ```
 
 - Run an instance of the nginx application on the Docker host
